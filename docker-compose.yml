@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  synapse:
+    image: matrixdotorg/synapse
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+    environment:
+      - SYNAPSE_SERVER_NAME=mydomain.com
+      - SYNAPSE_REPORT_STATS=no
+    ports:
+      - "8008:8008"
+
+  element-web:
+    image: vectorim/element-web
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./element-config.json:/app/config.json
