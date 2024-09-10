@@ -28,6 +28,7 @@ recaptcha_public_key: "YOUR_PUBLIC_KEY"
 recaptcha_private_key: "YOUR_PRIVATE_KEY"
 recaptcha_siteverify_api: "https://www.google.com/recaptcha/api/siteverify"
 enable_registration_captcha: true
+recaptcha_enabled: true
 ```
 # Bypassing the Check
 
