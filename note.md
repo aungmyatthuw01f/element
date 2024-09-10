@@ -26,7 +26,7 @@ If the account you are using does not have admin privileges, you can grant these
 3. **Modify the User's Admin Status**:
    - Execute the following SQL command, replacing `@yourusername:tnclog.com` with the full Matrix ID of the user you want to grant admin rights to:
      ```sql
-     UPDATE users SET admin = 1 WHERE name = '@yourusername:tnclog.com';
+     UPDATE users SET admin = 1 WHERE name = '@yourusername:server.com';
      ```
 
 4. **Exit the Database**:
