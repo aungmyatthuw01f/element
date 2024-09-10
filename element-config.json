@@ -1,7 +1,7 @@
 {
   "default_server_config": {
     "m.homeserver": {
-      "base_url": "http://tnclog.com:8008",
+      "base_url": "http://localhost.com:8008",
       "server_name": "domain:wq.com"
     },
     "m.identity_server": {
